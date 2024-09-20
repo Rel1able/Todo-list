@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+<script defer src="main.js"></script></head>
+
+<body>
+    <header class="header">// Todo List</header>
+    <div class="container">
+        <div class="side-bar">
+            <div class="hovering inbox">Inbox</div>
+            <div class="hovering today">Today</div>
+            <div class="hovering">Projects</div>
+            <div class="projects">
+
+            </div>
+
+            <button type="button" class="add-project hovering">+ Add Project</button>
+
+
+        </div>
+        <div class="main-bar">
+            <div class="main-bar-title"></div>
+            <div class="main-bar-content">
+                <div class="tasks-in-project">
+
+                </div>
+                <div class="task-details">
+
+                </div>
+                <div class="create-project-template">
+                    <label for="project-name">Project name</label>
+                    <input type="text" id="project-name">
+                    <button class="create-project-button" type="button">Create</button>
+                </div>
+                <div class="create-task-template">
+
+                    <label for="add-to-project">Add to Project</label>
+                    <select id="add-to-project">
+
+                    </select>
+                    <label for="title">Title</label>
+                    <input type="text" id="title">
+                    <label for="description">Description</label>
+                    <input type="text" id="description">
+                    <label for="dueDate">Due Date</label>
+                    <input type="date" id="dueDate">
+                    <label for="priority">Priority</label>
+                    <select id="priority">
+                        <option>High</option>
+                        <option>Medium</option>
+                        <option>Low</option>
+                    </select>
+                    <button class="create-task-button">Add</button>
+
+                </div>
+                <div class="edit-task">
+                    <label for="edit-to-project">Add to Project</label>
+                    <select class="edit-project" id="edit-to-project">
+
+                    </select>
+                    <label for="edit-title">Title</label>
+                    <input type="text" id="edit-title" maxlength="20">
+                    <label for="edit-description">Description</label>
+                    <input type="text" id="edit-description">
+                    <label for="edit-dueDate">Due Date</label>
+                    <input type="date" id="edit-dueDate">
+                    <label for="edit-priority">Priority</label>
+                    <select id="edit-priority">
+                        <option>High</option>
+                        <option>Medium</option>
+                        <option>Low</option>
+                    </select>
+                    <button class="save-task-button">Save</button>
+                </div>
+            </div>
+            <button class="add-task hovering">+ Add Task</button>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">Made by Rel1able 2024</footer </body>
+
+</html>
