@@ -208,7 +208,7 @@ function displayTasksInProject(arr) {
         completeTask(completeTaskButton, arr[i], taskbox);
 
         const taskButtons = document.createElement("div");
-        taskButtons.classList.add(".task-buttons");
+        taskButtons.classList.add("task-buttons");
         taskButtons.appendChild(removeTaskButton);
         taskButtons.appendChild(editTaskButton);
         taskButtons.appendChild(completeTaskButton);

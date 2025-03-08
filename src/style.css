@@ -149,13 +149,21 @@ body {
 
 .taskbox {
     border: 2px solid;
+    border-radius: 2rem;
+    cursor: pointer;
     padding: 1em;
     width: 50rem;
     height: 3rem;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.taskbox:hover{
+    transform: scale(1.05);
 }
 
 .task-details {
+    border-radius: 2rem;;
     display: none;
     font-size: 2em;
     border: 2px solid;
@@ -211,13 +219,13 @@ body {
 .remove-task-button,
 .complete-task-button {
     padding: 8px;
+    transition: transform 0.3s ease;
 }
 
 .edit-task-button:hover,
 .remove-task-button:hover,
 .complete-task-button:hover {
-    font-size: 1em;
-    border: 2px solid var(--main-color);
+    transform: scale(1.2);
 }
 
 .completed {
@@ -250,8 +258,8 @@ select {
     font-size: 1em;
     font-weight: bold;
     height: 50px;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 
 }
@@ -268,7 +276,8 @@ select {
 
 .task-buttons {
     width: 180px;
-    margin: 15px;
+    display: flex;
+    gap: 1rem;
 }
 
 .create-project-button,
@@ -286,14 +295,16 @@ select {
 
 .go-back-button {
     font-size: 1em;
+    border-radius: 1rem;
     border: none;
     background-color: var(--secondary-color);
     color: white;
 }
 
 .go-back-button:hover {
-    border: 2px solid var(--main-color);
-    color: rgb(242, 59, 22);
+    background-color: white;
+    color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .detailed-task {
